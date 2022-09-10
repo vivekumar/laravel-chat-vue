@@ -14,7 +14,8 @@ use App\Models\User;
 class SendMessage implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-
+    public $user;
+    public $message;
     /**
      * Create a new event instance.
      *

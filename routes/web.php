@@ -23,7 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/chat', [App\Http\Controllers\HomeController::class, 'chat'])->name('chat');
 Route::get('/messages', [App\Http\Controllers\HomeController::class, 'message'])->name('message');
 
-Route::post('/message-store', [App\Http\Controllers\HomeController::class, 'messageStore'])->name('message-store');
+Route::post('/messages', [App\Http\Controllers\HomeController::class, 'messageStore'])->name('message-store');
 
 
 

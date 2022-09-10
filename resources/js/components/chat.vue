@@ -67,6 +67,7 @@
 	    	})
 	    	Echo.private('chat-channel')
 	          .listen('SendMessage', (e) => {
+                console.log(e);
 	            messages.value.push({
 	              message: e.message.message,
 	              user: e.user
@@ -83,7 +84,7 @@
                     message: newMessage.value
                 };
 	            messages.value.push(user_message);
-	            axios.post('/message-store', user_message).then(response => {
+	            axios.post('/messages', user_message).then(response => {
 	              console.log(response.data);
 	            });
                 newMessage.value = ''
