@@ -25,11 +25,29 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Steps:
+- laravel new ChatApplication (create project)
+- composer require laravel/ui
+- php artisan ui vue --auth
 
-## Laravel Sponsors
+### Install Vue3
+	- npm install vue@next vue-loader@next
+	- remove package.lock.json
+	- remove node_modules folder
+	- run : `npm install`
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### laravel-socket
+	- - [Read the documentation](https://beyondco.de/docs/laravel-websockets/getting-started/introduction)
+
+### Laravel echo
+	- [Laravel Broadcasting - echo ](https://laravel.com/docs/8.x/broadcasting)
+
+### run project :
+	- php artisan serve 
+	- php artisan websockets:serve
+	- npm run watch 
+
+# Output
 
 ### Premium Partners
 
